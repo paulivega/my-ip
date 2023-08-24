@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-ip';
+  title: string = 'IP';
+  getMyIP = () => {
+    console.log('MyIP')
+  }
 }
