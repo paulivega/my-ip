@@ -12,14 +12,17 @@ export class AppComponent {
 
   constructor(
     private readonly http: HttpClient
-    
   ){}
 
   getMyIP = () => {
-    console.log('MyIP')
-    this.http.get<any>('http://ip-api.com/json/').subscribe((datos) => {
-      this.ip = datos.query
-      console.log(datos)
+    this.http.get<any>('https://api.ipify.org?format=json').subscribe((datos) => {
+      this.ip = this.hideSixCharacters(datos.ip);
     });
+  }
+
+  hideSixCharacters = (ip: string): string => {
+    let sets = ip.split('.');
+    const ipHide = sets.map((set, i) => i < 2 ? 'XXX': set).join('.');
+    return ipHide
   }
 }
