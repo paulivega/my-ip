@@ -1,13 +1,24 @@
 <div class="home-view">
-  <header></header>
+  <header>
+    <nav>
+      <ul>
+        <li> <a href="https://ingevec-35422.web.app/">What's my App</a></li>
+        <li> <a href="https://angular.io/">by angular</a></li>
+        <li> <a href="https://firebase.google.com/">hosted on firebase</a></li>
+        <li> <a href="https://github.com/paulivega">about me</a></li>
+      </ul>
+    </nav>
+  </header>
   <main>
-    <section class="title-btn-ip">
-      <span class="title">¿What is My {{title}}?</span>
+    <section class="container-section">
+      <div class="title-btn-ip">
+        <span class="title">¿What is My {{title}}?</span>
       <button type="button" class="btn-get-ip" (click)="getMyIP()">Get my IP</button>
-    </section>
-    <section class="client-ip">
-      <span>My IP number is:</span> <span class="ip-number">{{ip}}</span>
-    </section>
+      </div>
+      <div class="client-ip">
+       <span class="text-ip">Your IP number is:</span> <span class="ip-number">{{ip}}</span>
+      </div>
+    </section>  
   </main>
   <footer>Develop by Pauli</footer>
 </div>

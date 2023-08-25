@@ -16,12 +16,12 @@ export class AppComponent {
 
   getMyIP = () => {
     this.http.get<any>('https://api.ipify.org?format=json').subscribe((datos) => {
-      this.ip = this.hideSixCharacters(datos.ip);
+      this.ip = this.maskFirstSixNumbers(datos.ip);
     });
   }
 
-  hideSixCharacters = (ip: string): string => {
-    let sets = ip.split('.');
+  maskFirstSixNumbers = (fullIp: string): string => {
+    let sets = fullIp.split('.');
     const ipHide = sets.map((set, i) => i < 2 ? 'XXX': set).join('.');
     return ipHide
   }

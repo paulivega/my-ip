@@ -1,24 +1,49 @@
-
 .home-view{
+    height: 100vh;
+}
+header{
+    height: 50px;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1.5%;
+    background-color: #0078AA;
+}
+ul{   
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    width: 100%;
+}
+li a{
+    text-decoration: none;
+    color: #F6F6F6;
+}
+a:hover {
+    font-size: 1.2em;
+}
+.container-section{
     display: flex;
     flex-direction: column;
+    background-color: #3AB4F2;
     align-items: center;
     justify-content: center;
-    width: 1366px;
-    height: 768px;
-}
-main{
-    width: 95%;
-    height: 70%;
-
+    height: 90vh;
+    gap: 30%;
 }
 .title-btn-ip{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    gap: 4%;
+    padding: 3%;
+    gap: 100px;
 }
 .btn-get-ip{
     border-radius: 10px;
@@ -26,8 +51,12 @@ main{
     width: 100px;
     padding: 10px;
     font-size: 1em;
-
+    background-color: black;
+    color: white;
 }
+.btn-get-ip:hover {
+    border: 4px solid  #F6F6F6;
+  }
 .title{
     font-size: 5em;
     text-align: center;
@@ -35,20 +64,29 @@ main{
 .client-ip{
     display: flex;
     justify-content: center;
-    border: 2px solid salmon;
+    align-items: center;
     padding: 10px;
-    width: 100%;
+    width: 50%;
+    background-color: #0078AA;
+    color: #F6F6F6;
+}
+.text-ip{
+    font-size: 1.2em;
 }
 .ip-number{
-    border: 2px solid green;
-    padding: 10px;
+    text-decoration: underline;
+    color:#F2DF3A;
+    padding-left: 2%;
 }
 footer {
-    margin: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 20px;
     padding: 3%;
-    width: 95%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #0078AA;
+    color: #F6F6F6;
   }
