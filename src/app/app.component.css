@@ -33,6 +33,15 @@ main{
     text-align: center;
 }
 .client-ip{
+    display: flex;
+    justify-content: center;
+    border: 2px solid salmon;
+    padding: 10px;
+    width: 100%;
+}
+.ip-number{
+    border: 2px solid green;
+    padding: 10px;
 }
 footer {
     margin: 8px;
@@ -40,6 +49,6 @@ footer {
     justify-content: center;
     align-items: center;
     line-height: 20px;
-    padding: 2%;
+    padding: 3%;
     width: 95%;
   }
